@@ -1,0 +1,10 @@
+Rub is endless Ruby
+===================
+
+You can write Ruby code without "end"
+
+class Foo
+  def foo
+    puts "foo"
+
+Foo.new.foo #=> "foo"

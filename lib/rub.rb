@@ -1,4 +1,6 @@
 def rub(path)
+  @@rub_loaded_paths ||= {}
+  return false if @@rub_loaded_paths[path]
   result = []
   indents = [0]
   ended = false
@@ -24,4 +26,5 @@ def rub(path)
   end
   (indents.size - 1).times{result << "end"}
   eval result.join("\n"), TOPLEVEL_BINDING, $0 = path
+  @@rub_loaded_paths[path] = true
 end
