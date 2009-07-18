@@ -18,17 +18,4 @@ Gem::Specification.new do |s|
   s.rubyforge_project = %q{asakurarb}
   s.rubygems_version = %q{1.3.1}
   s.summary = %q{Rub is endless Ruby}
-
-  if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 2
-
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<merb>, [">= 1.0.9"])
-    else
-      s.add_dependency(%q<merb>, [">= 1.0.9"])
-    end
-  else
-    s.add_dependency(%q<merb>, [">= 1.0.9"])
-  end
 end
