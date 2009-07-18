@@ -8,3 +8,10 @@ class Foo
     puts "foo"
 
 Foo.new.foo #=> "foo"
+
+LIMITATIONS
+-----------
+
+  - You can't use multiline condition for if, while, until and so on.
+  
+  This version (0.0.1) would have various limitations.
